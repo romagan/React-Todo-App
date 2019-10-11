@@ -1,14 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import TodoListItem from '.components/todo-list-item';
+import TodoListItem from ".components/todo-list-item";
 
 const TodoList = () => {
-  return (
-    <ul>
-      <li><TodoListItem /></li>
-      <li><TodoListItem /></li>
-    </ul>
-  )
+    return (
+        <ul>
+            <li><TodoListItem 
+                    label="Drink Coffee" /></li>
+            <li><TodoListItem
+                    label="Build React App"
+                    important /></li>
+        </ul>
+    );
 };
 
 export default TodoList;

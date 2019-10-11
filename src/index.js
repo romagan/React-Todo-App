@@ -1,19 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import AppHeader from './components/app-header';
-import SearchPanel from './components/search-panel';
-import TodoList from './components/todo-list';
+import AppHeader from "./components/app-header";
+import SearchPanel from "./components/search-panel";
+import TodoList from "./components/todo-list";
 
 const App = () => {
-  return (
-    <div>
-      <AppHeader />
-      <SearchPanel />
-      <TodoList />
-    </div>
-  )
+    return (
+        <div>
+            <AppHeader />
+            <SearchPanel />
+            <TodoList />
+        </div>
+    );
+};
 
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
