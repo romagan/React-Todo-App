@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import './item-add-form.css';
 
 export default class ItemAddForm extends Component {
-
     state = {
         label: ''
     }
@@ -25,12 +24,12 @@ export default class ItemAddForm extends Component {
     render() {
         return (
             <form className="item-add-form d-flex"
-                    onSubmit={this.onSubmit}>
+                    onSubmit={ this.onSubmit }>
                 <input className="form-control"
                         type="text"
                         placeholder="What needs to be done"
-                        value={this.state.label}
-                        onChange={this.onLabelChange}/>
+                        value={ this.state.label }
+                        onChange={ this.onLabelChange }/>
                 <button className="btn btn-outline-secondary"
                         type="submit">
                     Add item
